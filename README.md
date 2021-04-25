@@ -18,6 +18,8 @@ $env->get("BOT_NAME");
 $env->set("BOT_NAME", "new name");
 // saving into new file or .env
 $env->save("new-file");
+//refresh params from file content
+$env->refresh();
 
 ```
 
