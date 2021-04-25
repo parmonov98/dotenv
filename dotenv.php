@@ -5,13 +5,14 @@ class DotEnv
   public $file_name = '.env';
   public $state = false;
   public $variables = [];
+
   function __construct(string $file_name)
   {
     $this->file_name = $file_name;
     $content = null;
     try {
       if (!file_exists($this->file_name)) {
-        file_put_contents($this->file_name, "");
+        copy(".env.example", ".env");
       }
       $content = file_get_contents($this->file_name);
     } catch (Exception $e) {
@@ -86,11 +87,3 @@ class DotEnv
     return $vars;
   }
 }
-
-// @value
-
-$env = new DotEnv(".env.example");
-
-// echo $env->get('CACHE_DRIVER');
-echo $env->set('APP_NAME', "bot");
-echo $env->save();
