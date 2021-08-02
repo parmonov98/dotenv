@@ -17,5 +17,6 @@
       "homepage": "http://parmonov98.uz",
       "role": "Developer"
     }
-  ]
+  ],
+  "minimum-stability": "dev"
 }
