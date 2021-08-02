@@ -16,7 +16,7 @@ class DotEnv
         copy(".env.example", ".env");
       }
       $content = file_get_contents($this->file_name);
-    } catch (Exception $e) {
+    } catch (\Exception $e) {
       $this->state = $e->getMessage();
       return;
     }
