@@ -3,11 +3,11 @@
 namespace Parmonov98;
 class DotEnv
 {
-  public $file_name = '.env';
+  public $file_name = '';
   public $state = false;
   public $variables = [];
 
-  function __construct(string $file_name)
+  function __construct(string $file_name = 'env')
   {
     $this->file_name = $file_name;
     $content = null;
