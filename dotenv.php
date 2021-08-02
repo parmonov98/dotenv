@@ -1,5 +1,6 @@
 <?php
 
+namespace Parmonov98;
 class DotEnv
 {
   public $file_name = '.env';

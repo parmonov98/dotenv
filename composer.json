@@ -1,0 +1,21 @@
+{
+  "name": "parmonov98/dotenv",
+  "type": "library",
+  "description": "A package to work with .env(name) files.",
+  "keywords": [
+    "php",
+    "environment",
+    "credentials",
+    "package"
+  ],
+  "homepage": "https://github.com/parmonov98/dotenv",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Murod Parmonov",
+      "email": "parmonov98@yandex.ru",
+      "homepage": "http://parmonov98.uz",
+      "role": "Developer"
+    }
+  ],
+}
