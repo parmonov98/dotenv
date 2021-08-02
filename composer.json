@@ -18,5 +18,10 @@
       "role": "Developer"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "Parmonov98\\Dotenv\\": "src/"
+    }
+  },
   "minimum-stability": "dev"
 }
