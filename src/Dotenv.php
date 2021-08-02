@@ -4,7 +4,7 @@ namespace Parmonov98\DotEnv;
 
 use Dotenv\Dotenv as CustomDotenv;
 
-class DotEnv
+class Dotenv
 {
   public $file_name = '';
   public $state = false;
