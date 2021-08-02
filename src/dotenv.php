@@ -60,7 +60,7 @@ class DotEnv
       } else {
         file_put_contents($this->file_name, $content);
       }
-    } catch (Exception $e) {
+    } catch (\Exception $e) {
       $this->state = $e->getMessage();
       return;
     }
