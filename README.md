@@ -3,7 +3,7 @@
 ## steps
 
 ```
--composer require parmonov98/dotenv
+-composer require parmonov98/dotenv:dev-main
 -include or require composer autoloader into your project 
 -import class using "use Parmonov98\DotEnv"
 -Create a new object and use it as you want.

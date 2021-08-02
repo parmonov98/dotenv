@@ -1,6 +1,9 @@
 <?php
+declare(strict_types=1);
+namespace Parmonov98\DotEnv;
 
-namespace Parmonov98;
+use Dotenv\Dotenv as CustomDotenv;
+
 class DotEnv
 {
   public $file_name = '';
