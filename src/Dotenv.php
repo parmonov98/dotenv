@@ -15,9 +15,9 @@ class Dotenv
     $this->file_name = $file_name;
     $content = null;
     try {
-      $filePath = $_SERVER['DOCUMENT_ROOT'] . "/." . $this->file_name;
+      $filePath = getcwd() . "/." . $this->file_name;
       if (!file_exists($filePath)) {
-        copy(".env.example", $filePath);
+        copy(getcwd() . "/.env.example", $filePath);
       }
       $content = file_get_contents($filePath);
     } catch (\Exception $e) {
